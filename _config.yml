@@ -1,4 +1,4 @@
-baseurl: "https://www.evoup.co.za"
+baseurl: ""
 
 title      : evo Up – Bond Origination and Home Loan Experts
 email      : evoup@evogroup.co.za
@@ -20,6 +20,6 @@ webserver_headers:
     - GET, OPTIONS, HEAD
 
 logo:
-  path: /assets/logo.png
+  path: /assets/evo-ultimate.png
 
 exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
