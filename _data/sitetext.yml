@@ -1,10 +1,6 @@
 header:
-    title: "evo Ultimate"
+    title: ""
     text: Need a home loan?
-    branches:
-      - name: Northern Suburbs (WC)
-        link: "/boland-cape-winelands"
-
 
 services:
     title: "Services We Offer"
@@ -71,12 +67,14 @@ portfolio:
     
 about:
     title: "About Us"
-    text2: "Evo Up is a bond origination and insurance procurement company servicing the entirety of South Africa. We have origination channels with all the major Banks and access to a network of professional Financial Advisors. Our team consists of experienced business professionals with skills ranging from expert bond origination, financial advisory and project implementation. Our services are underpinned by specialist digital systems and process management tools. <br>
+    text2: "Evo Ultimate is a bond origination company that originates via all the major banks. We are specialists in the Pretoria area with a team of experienced professionals with xx years of experience in homeloans and bond origination.
+
+    <br><br> 
     
-    <br> 
-    Evo Up is dedicated to operational excellence from a service level and optimal client outcome perspective. We seek to procure the best interest rates for our clients within an impressive turnaround time. Our team have more than 50 years of combined experience within the financial services industry and service more than 1000 clients. <br>
+    Evo Ultimate is dedicated to excellence with a client focussed perspective. We seek to get the best interest rates in the shortest amount of time. 
     
-    <br>
+    <br><br>
+    
     We are proud to be associated with Evo, who is a part of the ooba Group."
     
 clients:
@@ -118,11 +116,11 @@ team:
     people:
       - name: "Lizzy Mootane"
         role: "Head of Homeloans"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/500x500.png
         social:
           - url: tel:068 225 4434
             icon: fas fa-phone
-          - url: mailto:mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
+          - url: mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
             icon: fas fa-envelope
           # - url: https://facebook.com
           #   icon: fab fa-facebook-f
