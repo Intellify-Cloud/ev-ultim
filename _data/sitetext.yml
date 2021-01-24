@@ -1,5 +1,5 @@
 header:
-    title: 
+    title: "evo Ultimate"
     text: Need a home loan?
     branches:
       - name: Northern Suburbs (WC)
@@ -15,14 +15,14 @@ services:
         desc: "We submit your application to up to seven banks to get you the best rate, at NO cost to you?"
         icon: fas fa-home
         link: 
-          url: mailto:evoup@evogroup.co.za?subject=Mail from evo UP website
+          url: mailto:lizzy.propertyassociate@gmail.com?subject=Mail from evo Ultimate website
           text: "Email Us"
       - title: "Pre-qualification"
         desc: "One of our experts will help check your credit record, income and expenses to give you an accurate assessment of what you can afford. We let you know how likely you are to qualify for a bond."
         icon: fas fa-tasks       
         link:
-          url: tel:+27210232228
-          text: "Call: 021 023 2228"
+          url: tel:+2711xxxxxxx
+          text: "Call: 011 xxx xxxx"
       - title: "I’m Still Looking for a Home"
         desc: "I’m searching property portals and visiting show houses"
         icon: fas fa-search
@@ -47,7 +47,7 @@ calculators:
 
 
 textblock:
-    title: "Why evo Up"
+    title: "Why evo Ultimate"
     text: "Home loans are our business, and we focus on getting bonds approved."
     footer: "Our service is completely FREE, with no obligation."
     section: textblock
@@ -120,9 +120,9 @@ team:
         role: "Head of Homeloans"
         image: assets/img/team/500x500.jpg
         social:
-          - url: tel: 068 225 4434
+          - url: tel:068 225 4434
             icon: fas fa-phone
-          - url: mailto:mailto:michelle.mostert@evogroup.co.za?subject=Website Enquiry
+          - url: mailto:mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
             icon: fas fa-envelope
           # - url: https://facebook.com
           #   icon: fab fa-facebook-f
