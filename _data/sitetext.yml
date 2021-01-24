@@ -1,0 +1,150 @@
+header:
+    title: 
+    text: Need a home loan?
+    branches:
+      - name: Northern Suburbs (WC)
+        link: "/boland-cape-winelands"
+
+
+services:
+    title: "Services We Offer"
+    text: "We get you the most competitive rate by sourcing quotes from the banks for you to compare."
+    section: services
+    list:
+      - title: "Bond Origination"
+        desc: "We submit your application to up to seven banks to get you the best rate, at NO cost to you?"
+        icon: fas fa-home
+        link: 
+          url: mailto:evoup@evogroup.co.za?subject=Mail from evo UP website
+          text: "Email Us"
+      - title: "Pre-qualification"
+        desc: "One of our experts will help check your credit record, income and expenses to give you an accurate assessment of what you can afford. We let you know how likely you are to qualify for a bond."
+        icon: fas fa-tasks       
+        link:
+          url: tel:+27210232228
+          text: "Call: 021 023 2228"
+      - title: "I’m Still Looking for a Home"
+        desc: "I’m searching property portals and visiting show houses"
+        icon: fas fa-search
+
+calculators:
+    title: "Home Loan Calculators"
+    text: "Use our Home loan Calculators to work out the size of home loan you are likely to qualify for and what your bond repayments will be."
+    section: calculators
+    list:
+      - title: "Bond Calculator"
+        desc: "Calculate the home loan you qualify for."
+        icon: fas fa-calculator
+        link: 
+          url: /affordability-calculator
+          text: "Calculate"
+      - title: "Repayment Calculator"
+        desc: "Calculate your monthly bond repayments."
+        icon: fas fa-calculator   
+        link:
+          url: /bond-calculator
+          text: "Calculate"
+
+
+textblock:
+    title: "Why evo Up"
+    text: "Home loans are our business, and we focus on getting bonds approved."
+    footer: "Our service is completely FREE, with no obligation."
+    section: textblock
+    list:
+      - title: "We help you complete one application, which we submit to all the banks."
+        image: "fa-university"
+      - title: "We apply to the banks including your own to get quotes."
+        image: "fa-file-invoice-dollar"
+      - title: "You can then compare the various quotes."
+        image: "fa-balance-scale"
+      - title: "We will negotiate the rate & terms on your behalf."
+        image: "fa-comments-dollar"
+      - title: "We can assist you in securing a zero deposit bond if required."
+        image: "fa-user-shield"
+
+portfolio:
+    title: "Other Services"
+    text: "Some of our work"
+    section: portfolio
+    closebutton: "Close"
+    
+about:
+    title: "About Us"
+    text2: "Evo Up is a bond origination and insurance procurement company servicing the entirety of South Africa. We have origination channels with all the major Banks and access to a network of professional Financial Advisors. Our team consists of experienced business professionals with skills ranging from expert bond origination, financial advisory and project implementation. Our services are underpinned by specialist digital systems and process management tools. <br>
+    
+    <br> 
+    Evo Up is dedicated to operational excellence from a service level and optimal client outcome perspective. We seek to procure the best interest rates for our clients within an impressive turnaround time. Our team have more than 50 years of combined experience within the financial services industry and service more than 1000 clients. <br>
+    
+    <br>
+    We are proud to be associated with Evo, who is a part of the ooba Group."
+    
+clients:
+    title: Bank Partners
+    section: clients
+    max-height: 120px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "ABSA"
+        url: https://www.absa.co.za
+        logo: assets/img/clients/absa-bw.png
+
+      - title: "FNB"
+        url: https://www.fnb.co.za/
+        logo: assets/img/clients/fnb-bw.png
+        
+      - title: "Investec"
+        url: https://www.investec.co.za/
+        logo: assets/img/clients/investec-bw.png
+      - title: "Ithala Bank"
+        url: http://www.ithala.co.za/
+        logo: assets/img/clients/ithala-bank.png
+      - title: "Rand Merchant Bank"
+        url: https://www.rmb.co.za
+        logo: assets/img/clients/rmb-img.png
+      - title: "Nedbank"
+        url: https://www.nedbank.co.za
+        logo: assets/img/clients/nedbank-bw.png
+      - title: "Standard Bank"
+        url: https://www.standardbank.co.za/
+        logo: assets/img/clients/SBSA-bw.png
+    
+team:
+    title: "OUR TEAM"
+    # text: "Lorem ipsum dolor sit amet consectetur."
+    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    contact: 
+    people:
+      - name: "Lizzy Mootane"
+        role: "Head of Homeloans"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: tel: 068 225 4434
+            icon: fas fa-phone
+          - url: mailto:mailto:michelle.mostert@evogroup.co.za?subject=Website Enquiry
+            icon: fas fa-envelope
+          # - url: https://facebook.com
+          #   icon: fab fa-facebook-f
+
+contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: team
+    
+footer:
+    legal: "Powered by the evo Group"
+    social:
+      # - url: https://twitter.com
+      #   icon: "fab fa-twitter"  
+      # - url: https://facebook.com
+      #   icon: "fab fa-facebook-f"
+      # - url: https://linkedin.com
+      #   icon: "fab fa-linkedin-in"
+      # - url: https://github.com/raviriley/agency-jekyll-theme
+      #   icon: "fab fa-github"
+      # - url: https://instagram.com
+      #   icon: "fab fa-instagram"
+
+
+# {{ site.data.sitetext.ex.ex | markdownify | default: example }}

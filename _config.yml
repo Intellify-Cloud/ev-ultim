@@ -1,0 +1,25 @@
+baseurl: "https://www.evoup.co.za"
+
+title      : evo Up – Bond Origination and Home Loan Experts
+email      : evoup@evogroup.co.za
+description: Let evo Up! get you the best deal on your homeloan and provide you with comparative quotes. Trust us to secure your bond finance. Many buyers choose us to manage their homeloans with the best rates..
+author     : Eben Roux / Pieter Oosthuizen
+
+analytics:
+  google: G-W52PC8KL9W
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
+webserver_headers:
+  - - Access-Control-Allow-Origin
+    - "*"
+  - - Access-Control-Allow-Methods
+    - GET, OPTIONS, HEAD
+
+logo:
+  path: /assets/logo.png
+
+exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
