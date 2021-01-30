@@ -19,8 +19,8 @@ background: grey
     </div>
 
     <div class="col-md">
-		<p>Unit 4 Montacres</p>
-		<p>Dr Swanepoel Street</p>
+		<p>No. 4</p>
+		<p>34 Dr van der Merwe Street</p>
 		<p>Montana</p>
 		<p>0182</p>
     </div>
