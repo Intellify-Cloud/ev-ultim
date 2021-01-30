@@ -115,16 +115,49 @@ team:
     contact: 
     people:
       - name: "Lizzy Mootane"
-        role: "Head of Homeloans"
-        image: assets/img/team/500x500.png
+        role: "Head of Homeloans & Executive Director"
+        image: assets/img/team/Lizzy Mootane evo Ultimate.png
         social:
-          - url: tel:068 225 4434
+          - url: tel:068 224 4434
             icon: fas fa-phone
           - url: mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
             icon: fas fa-envelope
           # - url: https://facebook.com
           #   icon: fab fa-facebook-f
 
+      - name: "Kaylene van Schalkwyk"
+        role: "Bond Adminstrator"
+        image: assets/img/team/Kaylene van Schalkwyk evo Ultimate.png
+        social:
+          - url: tel:068 224 4434
+            icon: fas fa-phone
+          - url: mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
+            icon: fas fa-envelope
+          # - url: https://facebook.com
+          #   icon: fab fa-facebook-f
+
+      - name: "Anna Mootane"
+        role: "Bond Adminstrator"
+        image: assets/img/team/Anna Mootane evo Ultimate.png
+        social:
+          - url: tel:068 224 4434
+            icon: fas fa-phone
+          - url: mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
+            icon: fas fa-envelope
+          # - url: https://facebook.com
+          #   icon: fab fa-facebook-f
+
+      - name: "Anna Mootane"
+        role: "Bond Adminstrator"
+        image: assets/img/team/Phillipine Mmatli evo Ultimate.png
+        social:
+          - url: tel:068 224 4434
+            icon: fas fa-phone
+          - url: mailto:lizzy.propertyassociate@gmail.com?subject=Website Enquiry
+            icon: fas fa-envelope
+          # - url: https://facebook.com
+          #   icon: fab fa-facebook-f
+          
 contact:
     title: "Contact Us"
     text: "Lorem ipsum or call 123456789"
