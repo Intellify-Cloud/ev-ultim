@@ -48,13 +48,13 @@ textblock:
     footer: "Our service is completely FREE, with no obligation."
     section: textblock
     list:
-      - title: "We help you complete one application, which we submit to all the banks."
+      - title: "We assist you in completing your homeloan application."
         image: "fa-university"
-      - title: "We apply to the banks including your own to get quotes."
+      - title: "We apply to the 7 listed banks get their quotes."
         image: "fa-file-invoice-dollar"
-      - title: "You can then compare the various quotes."
+      - title: "You then compare the various quotes."
         image: "fa-balance-scale"
-      - title: "We will negotiate the rate & terms on your behalf."
+      - title: "We will negotiate the rate & terms of the homeloan on your behalf."
         image: "fa-comments-dollar"
       - title: "We can assist you in securing a zero deposit bond if required."
         image: "fa-user-shield"
