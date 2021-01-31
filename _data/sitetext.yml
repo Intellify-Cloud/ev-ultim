@@ -17,8 +17,8 @@ services:
         desc: "One of our experts will help check your credit record, income and expenses to give you an accurate assessment of what you can afford. We let you know how likely you are to qualify for a bond."
         icon: fas fa-tasks       
         link:
-          url: tel:+2711xxxxxxx
-          text: "Call: 011 xxx xxxx"
+          url: tel:+27135424388 
+          text: "Call: 013 542 4388"
       - title: "I’m Still Looking for a Home"
         desc: "I’m searching property portals and visiting show houses"
         icon: fas fa-search
