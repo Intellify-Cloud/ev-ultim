@@ -15,7 +15,7 @@ background: grey
   <div class="col-md">
 		<p>Tel: <a href="tel:+27125424388"> 012 542 4388</a></p>
 		<p>Cell: <a href="tel:+27682254434">068 225 4434</a></p>
-		<p>E-mail: <a href="mailto:lizzy.propertyassociate@gmail.com?subject=Mail from our Website">lizzy.propertyassociate@gmail.com</a></p>
+		<p>E-mail: <a href="mailto:lizzy.mootane@evogroup.co.za?subject=Mail from our Website">lizzy.mootane@evogroup.co.za</a></p>
     </div>
 
     <div class="col-md">
