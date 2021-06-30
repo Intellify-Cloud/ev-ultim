@@ -23,3 +23,11 @@ logo:
   path: /assets/evo-ultimate.png
 
 exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
+
+company: evo Ultimate
+
+group: evo Group
+
+url: https://www.evoultimate.co.za
+
+address: No. 4, 34 Dr van der Merwe Street, Montana, 0182
