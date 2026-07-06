@@ -1,47 +1,45 @@
 @charset "utf-8";
+
+// Bootstrap functions must be imported before any variable overrides
 @import "bootstrap/scss/functions";
+
+// Design tokens — this is the single source of truth.
+// Bootstrap overrides are placed here so they take effect
+// (Bootstrap variables use !default, so our definitions win).
+@import "base/variables";
+
+// Bootstrap variables, mixins, utilities — consume our overrides above
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
 
-$header-image: "./img/header1.jpg";
-$contact-image: "./img/contact.png";
+// Bootstrap at-scale components already carry our design tokens
+// Only importing components actually used in the site
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/utilities";
 
-$primary: #00ACC8;
-$white: #fff;
-$black: #000;
-$input-height:calc(#{$input-height-inner} + #{$input-height-border});
-
-$spacer:1rem;
-$border-width:3px;
-$border-radius:0;
-$enable-rounded: false;
-$enable-shadows:false;
-$enable-gradients:false;
-
-@import "bootstrap/scss/bootstrap";
-@import "bootstrap";
-
-@import "base/variables.scss";
-@import "base/mixins.scss";
-@import "base/page.scss";
-
-@import "components/buttons.scss";
-@import "components/navbar.scss";
-@import "components/client-scroll.scss";
-
-@import "layout/masthead.scss";
-@import "layout/services.scss";
-@import "layout/portfolio.scss";
-@import "layout/team.scss";
-@import "layout/contact.scss";
-@import "layout/footer.scss";
-@import "layout/clients.scss";
-@import "layout/textblock.scss";
-
-body {
-    overflow-x: hidden;
-    // font-family: "Roboto Slab","Roboto Condensed",sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-family: 'Comfortaa', cursive;
-    webkit-tap-highlight-color: $primary;
-}
-
+// Custom base & component overrides
+@import "base/mixins";
+@import "base/page";
+@import "components/card";
+@import "components/buttons";
+@import "components/forms";
+@import "components/navbar";
+@import "components/client-scroll";
+@import "layout/masthead";
+@import "layout/services";
+@import "layout/portfolio";
+@import "layout/team";
+@import "layout/contact";
+@import "layout/footer";
+@import "layout/clients";
+@import "layout/textblock";
+@import "layout/calculators";
+@import "layout/dist/calculators";

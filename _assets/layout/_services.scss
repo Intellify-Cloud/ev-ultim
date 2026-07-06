@@ -1,18 +1,25 @@
-// Styling for the services section
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-}
-
-#services .card {
-  border: none
-}
-
-#services .card .card-footer {
-  border: none;
-  background: none;
-}
+// Services section
+#services {
+  // Consistent section padding
+  padding: $space-7 0;
   
-#services .btn {
-  border-radius: 30px;
+  .section-heading {
+    margin-bottom: $space-5;
+  }
+  
+  // Ensure cards have consistent spacing
+  .card-deck {
+    margin-bottom: $space-5;
+  }
+  
+  // Mobile: stack cards
+  @media (max-width: 767px) {
+    padding: $space-6 0;
+    
+    .card-deck {
+      display: flex;
+      flex-direction: column;
+      gap: $space-4;
+    }
+  }
 }

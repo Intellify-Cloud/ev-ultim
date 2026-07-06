@@ -1,0 +1,17 @@
+.calculators {
+  justify-content: center;
+
+  .card {
+    max-width: 520px;
+  }
+}
+
+#pagecontainer {
+  min-height: 60vh;
+  padding-bottom: $space-5;
+}
+
+#pagecontainer > h1,
+#pagecontainer .section-heading:first-child {
+  margin-top: $space-4;
+}

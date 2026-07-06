@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.evoultimate.co.za/sitemap.xml
+
+# Disallow admin and private paths
+Disallow: /_/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+
+# Allow all public pages
+Allow: /$
+Allow: /contact
+Allow: /bond-calculator
+Allow: /affordability-calculator
+Allow: /privacy-statement
+Allow: /data-sharing-agreement

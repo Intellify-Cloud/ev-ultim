@@ -1,13 +1,81 @@
-// Font Mixins
-@mixin serif-font {
-  font-family: 'Comfortaa', cursive;
-}
-@mixin script-font {
-  font-family: 'Comfortaa', cursive;
-}
+// Typography mixins
 @mixin body-font {
-  font-family: 'Comfortaa', cursive;
+  font-family: $font-family-sans-serif;
 }
+
 @mixin heading-font {
-  font-family: 'Comfortaa', cursive;
+  font-family: $font-family-heading;
+}
+
+// Legacy aliases kept for backward compatibility
+// during progressive migration
+@mixin serif-font {
+  @include body-font;
+}
+
+@mixin script-font {
+  @include heading-font;
+}
+
+// Card mixin — shared across services, team, calculators, etc.
+@mixin card-base {
+  border-radius: $card-border-radius;
+  border: $card-border-width solid $card-border-color;
+  background-color: $card-bg;
+  box-shadow: $card-box-shadow;
+  transition: transform $transition-fast, box-shadow $transition-base;
+}
+
+@mixin card-hover {
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $card-hover-box-shadow;
+  }
+}
+
+// Input mixin
+@mixin input-base {
+  display: block;
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $input-font-size;
+  font-family: $font-family-sans-serif;
+  line-height: $line-height-base;
+  color: $input-color;
+  background-color: $input-bg;
+  background-clip: padding-box;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  transition: $input-transition;
+}
+
+// Button variant helper
+@mixin btn-variant($background, $border, $color: $white) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover {
+    color: $color;
+    background-color: darken($background, 7.5%);
+    border-color: darken($border, 7.5%);
+    transform: translateY(-2px);
+  }
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba($primary, .25);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: $btn-active-box-shadow;
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.65;
+    box-shadow: none;
+    transform: none;
+  }
 }

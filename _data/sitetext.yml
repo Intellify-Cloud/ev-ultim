@@ -8,7 +8,7 @@ services:
     section: services
     list:
       - title: "Bond Origination"
-        desc: "We submit your application to up to seven banks to get you the best rate, at NO cost to you?"
+        desc: "We submit your application to up to seven banks to get you the best rate, at no cost to you."
         icon: fas fa-home
         link: 
           url: mailto:lizzy.mootane@evogroup.co.za?subject=Mail from evo Ultimate website
@@ -20,7 +20,7 @@ services:
           url: tel:+27125424388 
           text: "Call: 012 542 4388"
       - title: "I’m Still Looking for a Home"
-        desc: "I’m searching property portals and visiting show houses"
+        desc: "I’m searching property portals and visiting show houses."
         icon: fas fa-search
 
 calculators:
@@ -48,13 +48,13 @@ textblock:
     footer: "Our service is completely FREE, with no obligation."
     section: textblock
     list:
-      - title: "We assist you in completing your homeloan application."
+      - title: "We assist you in completing your home loan application."
         image: "fa-university"
-      - title: "We apply to the 7 listed banks get their quotes."
+      - title: "We apply to seven leading banks and collect their quotes."
         image: "fa-file-invoice-dollar"
       - title: "You then compare the various quotes."
         image: "fa-balance-scale"
-      - title: "We will negotiate the rate & terms of the homeloan on your behalf."
+      - title: "We negotiate the rate and terms of the home loan on your behalf."
         image: "fa-comments-dollar"
       - title: "We can assist you in securing a zero deposit bond if required."
         image: "fa-user-shield"
@@ -67,7 +67,7 @@ portfolio:
     
 about:
     title: "About Us"
-    text2: "Evo Ultimate is a bond origination company that originates via all the major banks. We are specialists in the Pretoria area with a team of experienced professionals with xx years of experience in homeloans and bond origination.
+    text2: "Evo Ultimate is a bond origination company that originates via all the major banks. We are specialists in the Pretoria area with a team of experienced professionals with 15 years of experience in homeloans and bond origination.
 
     <br><br> 
     
@@ -115,8 +115,8 @@ team:
     contact: 
     people:
       - name: "Lizzy Mootane"
+        image: "assets/img/team/Lizzy Mootane evo Ultimate.png"
         role: "Head of Homeloans & Executive Director"
-        image: assets/img/team/Lizzy Mootane evo Ultimate.png
         social:
           - url: tel:068 224 4434
             icon: fas fa-phone
@@ -126,8 +126,8 @@ team:
           #   icon: fab fa-facebook-f
 
       - name: "Kaylene van Schalkwyk"
-        role: "Bond Adminstrator"
-        image: assets/img/team/Kaylene van Schalkwyk evo Ultimate.png
+        image: "assets/img/team/Kaylene van Schalkwyk evo Ultimate.png"
+        role: "Bond Administrator"
         social:
           - url: tel:012 542 4388
             icon: fas fa-phone
@@ -137,8 +137,8 @@ team:
           #   icon: fab fa-facebook-f
 
       - name: "Anna Mootane"
-        role: "Bond Adminstrator"
-        image: assets/img/team/Anna Mootane evo Ultimate.png
+        image: "assets/img/team/Anna Mootane evo Ultimate.png"
+        role: "Bond Administrator"
         social:
           - url: tel:012 542 4388
             icon: fas fa-phone
@@ -148,8 +148,8 @@ team:
           #   icon: fab fa-facebook-f
 
       - name: "Phillipine Mmatli"
-        role: "Bond Adminstrator"
-        image: assets/img/team/Phillipine Mmatli evo Ultimate.png
+        image: "assets/img/team/Phillipine Mmatli evo Ultimate.png"
+        role: "Bond Administrator"
         social:
           - url: tel:012 542 4388
             icon: fas fa-phone
@@ -157,25 +157,46 @@ team:
             icon: fas fa-envelope
           # - url: https://facebook.com
           #   icon: fab fa-facebook-f
-          
+
 contact:
     title: "Contact Us"
     text: "Lorem ipsum or call 123456789"
     section: team
     
 footer:
-    legal: "Powered by evo Home Loans"
+    copyright_prefix: "Copyright"
+    description: "evo Ultimate helps South African home buyers compare bond quotes from leading banks and secure the right home loan support."
+    privacy_label: "Privacy Statement"
+    privacy_url: "/privacy-statement"
+    terms_label: "Data Sharing"
+    terms_url: "/data-sharing-agreement"
+    social_label: "Social links"
+    sections:
+      - title: "Explore"
+        links:
+          - text: "Home"
+            url: "/"
+          - text: "Bond Calculator"
+            url: "/bond-calculator"
+          - text: "Affordability Calculator"
+            url: "/affordability-calculator"
+      - title: "Contact"
+        links:
+          - text: "Call us"
+            url: "tel:+27125424388"
+            external: true
+          - text: "Email us"
+            url: "mailto:lizzy.mootane@evogroup.co.za"
+            external: true
     social:
-      # - url: https://twitter.com
-      #   icon: "fab fa-twitter"  
-      # - url: https://facebook.com
-      #   icon: "fab fa-facebook-f"
-      # - url: https://linkedin.com
+      # - title: "LinkedIn"
+      #   url: https://www.linkedin.com/company/example
       #   icon: "fab fa-linkedin-in"
-      # - url: https://github.com/raviriley/agency-jekyll-theme
-      #   icon: "fab fa-github"
-      # - url: https://instagram.com
-      #   icon: "fab fa-instagram"
+      #   external: true
+    credits:
+      - text: "Powered by evo Home Loans"
+        url: "https://evohomeloans.co.za/"
+        external: true
 
 
 # {{ site.data.sitetext.ex.ex | markdownify | default: example }}

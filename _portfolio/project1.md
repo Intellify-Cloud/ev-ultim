@@ -1,14 +1,14 @@
 ---
 title: oobalink Franchises
-# subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-# image: /assets/img/portfolio/franchises.jpg
-# alt: Umbrellas
+description: "oobalink franchise opportunities with evo Ultimate. Join the ooba group franchise network in South Africa."
+subtitle: Interested in an oobalink franchise?
+image: /assets/img/portfolio/franchises.jpg
+alt: Franchise Opportunities
 
 caption:
   title: Franchise Opportunities
   subtitle: Interested in an oobalink franchise?
   thumbnail: /assets/img/portfolio/franchises.jpg
-  # alt: Umbrellas  
 ---
 
 **oobalink** is a member of the ooba group and owner of the **oobalink** franchise brand. oobalink has traded successfully in the origination industry within South Africa for over 10 years.
@@ -33,4 +33,3 @@ As a **oobalink**, Quantro or Wizard franchisee, your benefits include:
 - Training
 - Sales Support
 - Commission
-

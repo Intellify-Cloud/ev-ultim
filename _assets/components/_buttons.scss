@@ -1,31 +1,56 @@
-/*!
- * Button styling
- */
+.btn {
+  font-family: $font-family-heading;
+  font-weight: $btn-font-weight;
+  border-radius: $btn-border-radius;
+  letter-spacing: .01em;
+  transition: $btn-transition;
 
- .btn {
-  @include heading-font;
-  font-weight: 700;
-}
-
-.btn-xl {
-  font-size: 18px;
-  padding: 16px 32px;
-  margin: 4px;
-}
-
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  border-radius: 30px;
-  &:active,
-  &:focus,
   &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
-    color: white;
+    transform: translateY(-2px);
   }
+
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+    transform: translateY(0);
+  }
+
+  .btn-xl {
+    @extend .btn-lg;
+  }
+}
+
+// Primary variant
+.btn-primary {
+  @include btn-variant($brand-primary, $brand-primary);
+  box-shadow: $btn-box-shadow;
+}
+
+// Secondary variant (outline style)
+.btn-secondary {
+  @include btn-variant($white, $brand-primary, $brand-primary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $surface-soft;
+    border-color: $brand-primary;
+    color: $brand-primary-dark;
+  }
+}
+
+// Ghost / minimal
+.btn-ghost {
+  @include btn-variant(transparent, transparent, $brand-primary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgba($brand-primary, .08);
+  }
+
+  box-shadow: none;
+
+  &:hover {
+    transform: translateY(-1px);
   }
 }

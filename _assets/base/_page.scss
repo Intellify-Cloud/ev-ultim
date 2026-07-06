@@ -1,73 +1,210 @@
-// Global styling for this template
+// Global page styles — rely on design tokens from _variables.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
-  @include body-font;
+  color: $body-color;
+  background-color: $body-bg;
+  color-scheme: light;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba($brand-primary, .18);
+  transition: background-color $transition-base, color $transition-base;
 }
 
 p {
-  line-height: 1.75;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: $paragraph-line-height;
+  color: $body-color;
+  margin-bottom: $space-3;
 }
 
 a {
-  color: $primary;
+  color: $link-color;
+  text-decoration: $link-decoration;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+  transition: color $transition-fast;
+
   &:hover {
-    color: darken($primary, 10%);
+    color: $link-hover-color;
+    text-decoration-color: $link-hover-color;
   }
+}
+
+dl,
+ol,
+ul {
+  margin-bottom: $space-3;
+}
+
+ul,
+ol {
+  padding-left: $space-5;
+}
+
+li {
+  margin-bottom: $space-2;
+}
+
+// Typography scale — reuse Bootstrap heading sizes
+// but override font family & token properties
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  letter-spacing: $headings-letter-spacing;
+  color: $headings-color;
+  margin-bottom: $space-3;
+  margin-top: $space-4;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+  letter-spacing: 0;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+  letter-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Focus visible — accessibility
+:focus-visible {
+  outline: 3px solid rgba($brand-primary, .42);
+  outline-offset: 3px;
+}
+
+// Bootstrap helper overrides using tokens
+.bg-light {
+  background-color: $surface-soft !important;
+}
+
+.text-muted {
+  color: $ink-muted !important;
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $brand-primary !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 900;
-  @include heading-font;
+a.text-primary:hover,
+a.text-primary:focus {
+  color: $brand-primary-dark !important;
 }
 
 .page-section {
-  padding: 100px 0;
+  padding: $space-7 0;
+
   h2.section-heading {
-    font-size: 40px;
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: $space-2;
+    text-transform: uppercase;
   }
+
   h3.section-subheading {
-    font-size: 16px;
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.125rem;
     font-weight: 400;
-    font-style: italic;
-    margin-bottom: 3em;
+    font-style: normal;
+    line-height: 1.7;
+    margin-bottom: $space-5;
     text-transform: none;
-    @include serif-font;
+    font-family: $font-family-sans-serif;
   }
+
   h3.textblock-subheading {
     font-size: 1.5rem;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 25px;
+    margin-bottom: $space-2;
     text-transform: none;
-    @include serif-font;
+    font-family: $font-family-sans-serif;
   }
-
 }
-@media(min-width:768px) {
+
+@media (min-width: 768px) {
   section {
-    padding: 100px 0;
+    padding: $space-7 0;
   }
 }
 
-// Highlight color customization
+@media (max-width: 767px) {
+  .page-section {
+    padding: $space-6 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    color: $body-color;
+    background-color: $body-bg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+// Selection
 ::-moz-selection {
-  background: $primary;
+  background: $brand-primary;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: $brand-primary;
   text-shadow: none;
 }
 
@@ -79,14 +216,99 @@ img::-moz-selection {
   background: transparent;
 }
 
-// ================ IFRAME
-.bond-calc {
-  width: 100%;
-  height: 1420px;
+// Empty states and page hero
+.empty-state,
+.page-hero {
+  background: linear-gradient(135deg, rgba($brand-primary, .08), rgba($brand-primary, .02));
+  border: 1px solid rgba($brand-primary, .16);
+  border-radius: $border-radius-lg;
+  padding: $space-6;
+  box-shadow: $shadow-sm;
 }
 
+.page-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  justify-content: center;
+  margin-top: $space-4;
+}
 
+.calculator-shell {
+  position: relative;
+  border: 1px solid rgba($brand-primary, .16);
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  background: $surface-soft;
+  min-height: 420px;
+}
+
+.calculator-loading,
+.calculator-error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: $space-5;
+  background: rgba($surface, .95);
+  z-index: 2;
+}
+
+.calculator-error {
+  color: $body-color;
+}
+
+.calculator-frame {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+  background: $white;
+}
+
+// Iframe wrappers for calculators
+.bond-calc,
 .afford-calc {
   width: 100%;
-  height: 1500px;
+  height: 1420px;
+  border: 0;
+}
+
+@media print {
+  body {
+    background: $white !important;
+    color: $black !important;
+  }
+
+  .navbar,
+  .btn,
+  footer,
+  .page-hero__actions,
+  .calculator-loading,
+  .calculator-error {
+    display: none !important;
+  }
+
+  .container,
+  .page-section {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  .calculator-shell,
+  .calculator-frame {
+    border: 0;
+    box-shadow: none;
+    min-height: auto;
+    height: auto;
+  }
+
+  a {
+    color: $black !important;
+    text-decoration: none;
+  }
 }

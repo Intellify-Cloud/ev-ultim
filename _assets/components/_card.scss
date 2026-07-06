@@ -1,0 +1,66 @@
+// ============================================
+// Unified card component
+// Used by services, team, calculators, etc.
+// ============================================
+
+.card {
+  @include card-base;
+  @include card-hover;
+  overflow: hidden;
+
+  .card-body {
+    padding: $space-4 $space-3;
+  }
+
+  .card-title {
+    margin-bottom: $space-2;
+    line-height: $headings-line-height;
+  }
+
+  .card-footer {
+    border: none;
+    background: none;
+    padding: 0 $space-3 $space-4;
+  }
+}
+
+// Section-specific card overrides go in their own
+// layout partials if they truly differ. Keep token
+// base here.
+
+// Team "card" uses the same rounded padded box
+.team-member {
+  @include card-base;
+  @include card-hover;
+  text-align: center;
+  height: calc(100% - #{$space-3});
+  margin-bottom: $space-3;
+  padding: $space-4 $space-3;
+
+  img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border: 6px solid rgba($brand-primary, .12);
+    border-radius: 50%;
+  }
+
+  h4 {
+    margin-top: $space-2;
+    margin-bottom: 0;
+  }
+
+p {
+     margin-top: 0;
+   }
+}
+
+// Textblock "card" block
+.textblock-heading {
+  padding: $space-3;
+  border-radius: $card-border-radius;
+  background: $surface;
+  box-shadow: $card-box-shadow;
+  color: $brand-primary;
+  margin: $space-2 0;
+}

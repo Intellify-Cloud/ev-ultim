@@ -1,8 +1,7 @@
-baseurl: "https://www.evoultimate.co.za"
-
-title      : evo Ultimate – Bond Origination and Home Loan Experts | Pretoria | Montana
+baseurl: ""
+title      : evo Ultimate – Bond Origination and Home Loan Experts
 email      : lizzy.mootane@evogroup.co.za
-description: evo Ultimate is dedicated to getting you the best deal on your homeloan by providing you with comparative quotes from seven of the major banks.  Let us secure your bond finance like so many buyers who have chosen us to manage their homeloans.
+description: Compare home loan quotes from up to seven major banks with evo Ultimate's Pretoria bond origination experts. Our service is free to home buyers.
 author     : Eben Roux / Pieter Oosthuizen
 
 analytics:
@@ -19,15 +18,52 @@ webserver_headers:
   - - Access-Control-Allow-Methods
     - GET, OPTIONS, HEAD
 
-logo:
-  path: /assets/evo-ultimate.png
+logo: /assets/img/logo/evo-ultimate-logo.png
 
 exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
 
 company: evo Ultimate
-
 group: evo Home Loans
 
 url: https://www.evoultimate.co.za
-
+lang: en-ZA
 address: Honey Suckle Street, Magalieskruin, Montana, 0182
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-minifier
+
+# SEO tag defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      author: "Eben Roux / Pieter Oosthuizen"
+      image: "/social_evulti.jpg"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Eben Roux / Pieter Oosthuizen"
+
+# Minification
+jekyll-minifier:
+  remove_spaces_around_tags: true
+  remove_comments: true
+  collapse_whitespace: true
+  remove_empty_attributes: true
+  remove_optional_attribute_quotes: false
+  remove_redundant_attributes: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

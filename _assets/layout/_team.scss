@@ -1,19 +1,37 @@
-// Styling for the team section
-.team-member {
-  margin-bottom: 50px;
-  text-align: center;
-  img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid fade-out($black, 0.9);
+// Team section
+#team {
+  // Consistent section padding
+  padding: $space-7 0;
+  
+  // Mobile responsive
+  @media (max-width: 767px) {
+    padding: $space-6 0;
   }
-  h4 {
-    margin-top: 25px;
+
+  // Social contact icons
+  ul.social-buttons {
     margin-bottom: 0;
-    text-transform: none;
-  }
-  p {
-    margin-top: 0;
+    
+    li {
+      a {
+        font-size: 20px;
+        line-height: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        transition: all $transition-base;
+        color: $white;
+        border-radius: 100%;
+        outline: none;
+        background-color: $color-danger;
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $brand-primary;
+        }
+      }
+    }
   }
 }
 

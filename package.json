@@ -1,18 +1,24 @@
 {
-  "name": "intellify",
+  "name": "evoultimate",
   "version": "1.0.0",
-  "description": "Get online. Grow online. Intellify your business to reach new heights.",
+  "description": "evo Ultimate – Bond Origination and Home Loan Experts",
   "scripts": {
-    "bundle": "webpack",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack",
+    "bundle": "npm run jekyll",
+    "jekyll": "jekyll build --baseurl ''",
     "serve": "jekyll serve --baseurl ''",
-    "trace": "jekyll serve --trace --baseurl ''"
+    "trace": "jekyll serve --trace --baseurl ''",
+    "optimize-images": "node scripts/optimize-images.js",
+    "prebuild": "npm run optimize-images",
+    "prejekyll": "npm run build"
   },
-  "author": "Intellify-Cloud",
+  "author": "Eben Roux / Pieter Oosthuizen",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",
     "css-loader": "^4.2.2",
+    "cross-env": "^10.0.0",
     "expose-loader": "^1.0.0",
     "file-loader": "^6.1.0",
     "jquery": "^3.4.1",
@@ -24,9 +30,10 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "node-sass": "^4.12.0",
+    "sass": "^1.77.8",
     "sass-loader": "^9.0.3",
-    "jquery.easing": "^1.4.1"
+    "jquery.easing": "^1.4.1",
+    "sharp": "^0.33.0"
   },
   "dependencies": {}
 }

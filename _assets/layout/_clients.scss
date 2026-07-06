@@ -1,9 +1,66 @@
-.brand-logo {
-  margin: 20px;
-}
+#clients {
+  // Consistent section padding
+  padding: $space-7 0;
+  
+  .section-heading {
+    font-family: $font-family-heading;
+    font-weight: 700;
+    color: $gray-900;
+    font-size: 2.625rem; // 42px
+    line-height: 1.2;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: -.025em;
+    margin-bottom: $space-4;
+  }
+  
+  .clients__grid {
+    margin-top: $space-5;
+  }
 
-#clients .row {
-  margin-top: 50px;
+  .clients__cell {
+    padding: $space-3; // gap between tiles
+  }
+
+  .client-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1; // neat square tile
+    padding: $space-3;
+    border-radius: $card-border-radius;
+    background-color: $surface;
+    border: 1px solid $border-color;
+    box-shadow: $card-box-shadow;
+    transition: transform $transition-fast, box-shadow $transition-fast;
+
+    &:hover,
+    &:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+  }
+
+  .client-logo__image {
+    max-width: 100%;
+    max-height: 72px; // compact
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  // Mobile responsive
+  @media (max-width: 767px) {
+    padding: $space-6 0;
+    
+    .section-heading {
+      font-size: 2.125rem; // 34px on mobile
+    }
+    
+    .clients__cell {
+      padding: $space-2;
+    }
+  }
 }
 
 #clients img {

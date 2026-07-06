@@ -14,5 +14,11 @@ nav:
   - title: "Calculators"
     section: calculators
 
+  - title: "Bond Calculator"
+    url: /bond-calculator
+
+  - title: "Affordability"
+    url: /affordability-calculator
+
   - title: "Contact"
     url: /contact

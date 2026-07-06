@@ -1,8 +1,12 @@
-// Styling for the services section
-.textblock-heading {
-    margin: 5px 0;
-    text-transform: none;
-    color: #01acc8;
+// Textblock section
+#textblock {
+  // Consistent section padding
+  padding: $space-7 0;
+  
+  // Mobile responsive
+  @media (max-width: 767px) {
+    padding: $space-6 0;
+  }
 }
 
 .textblock-image {
@@ -10,5 +14,6 @@
 }
 
 .textblock-title {
-  line-height: 2em;
+  padding: 0.35rem 0;
+  line-height: 1.55;
 }

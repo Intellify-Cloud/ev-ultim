@@ -1,51 +1,29 @@
-// Styling for the contact section
-section#contact {
+// Contact section
+#contact {
+  // Consistent section padding
+  padding: $space-7 0;
+  
   background-color: $gray-900;
   background-image: url("#{$contact-image}");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
   .section-heading {
     color: $white;
   }
-  .form-group {
-    margin-bottom: 25px;
-    input,
-    textarea {
-      padding: 20px;
-    }
-    input.form-control {
-      height: auto;
-    }
-    textarea.form-control {
-      height: 248px;
-    }
-  }
+
   .form-control:focus {
-    border-color: $primary;
+    border-color: $brand-primary;
     box-shadow: none;
   }
-  ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  ::-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-ms-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
+  
+  // Mobile responsive
+  @media (max-width: 767px) {
+    padding: $space-6 0;
   }
 }
 
 .contact-us p {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
