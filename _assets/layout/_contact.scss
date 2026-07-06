@@ -1,8 +1,8 @@
 // Contact section
 #contact {
-  // Consistent section padding
-  padding: $space-7 0;
-  
+  // Consistent section padding (spacing scale)
+  @include section-padding;
+
   background-color: $gray-900;
   background-image: url("#{$contact-image}");
   background-repeat: no-repeat;
@@ -16,11 +16,6 @@
   .form-control:focus {
     border-color: $brand-primary;
     box-shadow: none;
-  }
-  
-  // Mobile responsive
-  @media (max-width: 767px) {
-    padding: $space-6 0;
   }
 }
 

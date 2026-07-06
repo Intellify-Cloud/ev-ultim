@@ -4,6 +4,8 @@
   border-radius: $btn-border-radius;
   letter-spacing: .01em;
   transition: $btn-transition;
+  // Accessible touch target (min 44px) on every device
+  min-height: $touch-target-min;
 
   &:hover {
     transform: translateY(-2px);
@@ -13,10 +15,11 @@
   &:focus {
     transform: translateY(0);
   }
+}
 
-  .btn-xl {
-    @extend .btn-lg;
-  }
+// Extra-large CTA — used on hero & contact submit
+.btn-xl {
+  @extend .btn-lg;
 }
 
 // Primary variant

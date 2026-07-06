@@ -9,7 +9,8 @@
     "serve": "jekyll serve --baseurl ''",
     "trace": "jekyll serve --trace --baseurl ''",
     "optimize-images": "node scripts/optimize-images.js",
-    "prebuild": "npm run optimize-images",
+    "favicon:generate": "node scripts/generate-favicons.js",
+    "prebuild": "npm run optimize-images && npm run favicon:generate",
     "prejekyll": "npm run build"
   },
   "author": "Eben Roux / Pieter Oosthuizen",

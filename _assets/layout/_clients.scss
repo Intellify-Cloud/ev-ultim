@@ -1,10 +1,6 @@
 #clients {
-  // Consistent section padding
-  padding: $space-7 0;
-
-  .clients-container {
-    max-width: 1200px;
-  }
+  // Consistent section padding (spacing scale)
+  @include section-padding;
 
   .section-heading {
     font-family: $font-family-heading;
@@ -65,7 +61,7 @@
   }
 
   // Mobile responsive
-  @media (max-width: 991px) {
+  @media (max-width: ($bp-lg - 1px)) {
     .clients__grid {
       flex-wrap: wrap;
       gap: $space-2;
@@ -78,9 +74,7 @@
     }
   }
 
-  @media (max-width: 767px) {
-    padding: $space-6 0;
-
+  @media (max-width: ($bp-md - 1px)) {
     .section-heading {
       font-size: 2.125rem; // 34px on mobile
     }

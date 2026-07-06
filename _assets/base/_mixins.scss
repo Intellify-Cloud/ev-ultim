@@ -7,6 +7,25 @@
   font-family: $font-family-heading;
 }
 
+// Section padding — uniform vertical rhythm from the spacing scale.
+// Applies the desktop padding, then drops to the mobile/tablet padding
+// below the `md` breakpoint so every section stays in sync.
+@mixin section-padding {
+  padding: $section-padding-y $section-padding-x;
+
+  @media (max-width: ($bp-md - 1px)) {
+    padding: $section-padding-y-sm $section-padding-x;
+  }
+}
+
+// Accessible touch target — guarantees a minimum tappable area.
+@mixin touch-target($min: $touch-target-min) {
+  min-height: $min;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // Legacy aliases kept for backward compatibility
 // during progressive migration
 @mixin serif-font {

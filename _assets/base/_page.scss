@@ -126,7 +126,7 @@ a.text-primary:focus {
 }
 
 .page-section {
-  padding: $space-7 0;
+  @include section-padding;
 
   h2.section-heading {
     font-size: clamp(2rem, 4vw, 3rem);
@@ -158,15 +158,15 @@ a.text-primary:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $bp-md) {
   section {
-    padding: $space-7 0;
+    padding: $section-padding-y 0;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: ($bp-md - 1px)) {
   .page-section {
-    padding: $space-6 0;
+    padding: $section-padding-y-sm 0;
   }
 }
 

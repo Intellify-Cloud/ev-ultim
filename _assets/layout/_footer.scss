@@ -1,6 +1,7 @@
 // Footer section
 .footer {
-  padding: $space-7 0 $space-6;
+  @include section-padding;
+  padding-bottom: $section-padding-y-sm;
   border-top: 1px solid rgba($ink, .08);
   background-color: $surface-soft;
   color: $ink-muted;

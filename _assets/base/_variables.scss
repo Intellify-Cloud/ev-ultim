@@ -91,6 +91,54 @@ $space-10: $spacer * 32;
 // Grid
 $grid-gutter-width: 2rem;
 
+// ============================================
+// LAYOUT SYSTEM — consistent widths & breakpoints
+// ============================================
+// Mobile-first breakpoint tokens (single source of truth).
+// Used by all custom media queries so sections stay in sync.
+$bp-sm: 576px;   // phones (landscape) / small tablets
+$bp-md: 768px;   // tablets
+$bp-lg: 992px;   // small desktops / laptops
+$bp-xl: 1200px;  // large desktops
+$bp-xxl: 1400px; // extra-large desktops
+
+// Override Bootstrap's breakpoints so every component shares one scale.
+// (Bootstrap variables use !default, so these win because they are
+//  defined before bootstrap/scss/variables is imported.)
+$grid-breakpoints: (
+  xs: 0,
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl,
+  xxl: $bp-xxl
+);
+
+// Consistent content widths across all sections.
+// Each step is aligned to the 4px spacing scale for a harmonious rhythm.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Wrapper for the largest readable measure (text blocks, forms).
+$content-measure: 760px;
+
+// ============================================
+// SECTION PADDING — uniform vertical rhythm
+// ============================================
+$section-padding-y: $space-7;     // 96px on desktop
+$section-padding-y-sm: $space-6;  // 64px on mobile / tablet
+$section-padding-x: 0;
+
+// ============================================
+// TOUCH TARGETS — accessible minimum size
+// ============================================
+$touch-target-min: 44px;          // WCAG 2.5.5 (AAA) comfortable target
+
 // Border
 $border-color: rgba($gray-900, .08);
 $border-radius: 0.75rem;

@@ -100,3 +100,80 @@
     }
   }
 }
+
+// ============================================
+// Dropdown (e.g. Calculators)
+// ============================================
+#mainNav .navbar-nav {
+  .nav-item.dropdown {
+    .dropdown-toggle::after {
+      vertical-align: middle;
+      margin-left: $spacer * 0.5;
+    }
+
+    .dropdown-menu {
+      margin-top: $spacer;
+      padding: $spacer 0;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      box-shadow: $shadow-md;
+      background-color: $surface;
+
+      .dropdown-item {
+        color: $ink;
+        font-family: $font-family-heading;
+        font-weight: 700;
+        padding: $spacer $spacer * 2;
+        min-height: $touch-target-min;
+        display: flex;
+        align-items: center;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+          background-color: rgba($brand-primary, .08);
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+// ============================================
+// Touch targets — mobile / tablet (below lg)
+// ============================================
+@media (max-width: ($bp-lg - 1px)) {
+  #mainNav {
+    .navbar-toggler {
+      min-height: $touch-target-min;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          min-height: $touch-target-min;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .dropdown-menu {
+        border: 0;
+        box-shadow: none;
+        background: transparent;
+        padding-left: $spacer * 2;
+
+        .dropdown-item {
+          color: $ink;
+          background: transparent;
+
+          &:hover,
+          &:focus,
+          &:focus-visible {
+            background-color: rgba($brand-primary, .08);
+          }
+        }
+      }
+    }
+  }
+}

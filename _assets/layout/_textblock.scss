@@ -1,12 +1,7 @@
 // Textblock section
 #textblock {
-  // Consistent section padding
-  padding: $space-7 0;
-  
-  // Mobile responsive
-  @media (max-width: 767px) {
-    padding: $space-6 0;
-  }
+  // Consistent section padding (spacing scale)
+  @include section-padding;
 }
 
 .textblock-image {
