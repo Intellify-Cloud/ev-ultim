@@ -1,18 +1,16 @@
 <!-- Clients -->
 <section class="page-section bg-light" id="{{ site.data.sitetext.clients.section | default: "clients" }}">
-  <div class="container">
+  <div class="container clients-container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase">{{ site.data.sitetext.clients.title }}</h2>
       </div>
     </div>
-    <div class="row d-flex justify-content-around clients__grid" {% if site.data.sitetext.clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
+    <div class="clients__grid" {% if site.data.sitetext.clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
       {% for client in site.data.sitetext.clients.list %}
-      <div class="col-md-3 col-sm-6 clients__cell">
-        <a href="{{ client.url }}" class="client-logo" aria-label="{{ client.title }}">
-          <img class="client-logo__image" src="{{ client.logo }}" alt="{{ client.title }}">
-        </a>
-      </div>
+      <a href="{{ client.url }}" class="client-logo" aria-label="{{ client.title }}">
+        <img class="client-logo__image" src="{{ client.logo }}" alt="{{ client.title }}">
+      </a>
       {% endfor %}
     </div>
   </div>

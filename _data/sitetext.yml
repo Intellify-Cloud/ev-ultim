@@ -86,26 +86,22 @@ clients:
       - title: "ABSA"
         url: https://www.absa.co.za
         logo: assets/img/clients/absa-bw.png
-
       - title: "FNB"
         url: https://www.fnb.co.za/
-        logo: assets/img/clients/fnb-bw.png
+        logo: assets/img/clients/fnb-n.png
         
       - title: "Investec"
         url: https://www.investec.co.za/
-        logo: assets/img/clients/investec-bw.png
-      - title: "Ithala Bank"
-        url: http://www.ithala.co.za/
-        logo: assets/img/clients/ithala-bank.png
+        logo: assets/img/clients/investec.png
       - title: "Rand Merchant Bank"
         url: https://www.rmb.co.za
-        logo: assets/img/clients/rmb-img.png
+        logo: assets/img/clients/rmb-img-n.png
       - title: "Nedbank"
         url: https://www.nedbank.co.za
-        logo: assets/img/clients/nedbank-bw.png
+        logo: assets/img/clients/Nedbank.png
       - title: "Standard Bank"
         url: https://www.standardbank.co.za/
-        logo: assets/img/clients/SBSA-bw.png
+        logo: assets/img/clients/standard-bank_logo.png
     
 team:
     title: "OUR TEAM"
@@ -196,6 +192,9 @@ footer:
     credits:
       - text: "Powered by evo Home Loans"
         url: "https://evohomeloans.co.za/"
+        external: true
+      - text: "Website by Intellify"
+        url: "https://www.intellify.co.za/"
         external: true
 
 
