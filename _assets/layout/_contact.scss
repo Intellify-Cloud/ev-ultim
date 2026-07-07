@@ -22,3 +22,80 @@
 .contact-us p {
   margin-bottom: 0.25em;
 }
+
+.contact-details {
+  margin-bottom: $space-6;
+}
+
+.contact-details__grid {
+  display: grid;
+  gap: $space-3;
+}
+
+.contact-details__card {
+  height: 100%;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+  }
+}
+
+.contact-details__eyebrow {
+  margin: 0;
+  color: $brand-primary;
+  font-family: $font-family-heading;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-details__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: $space-1 * 0.5;
+    color: $ink;
+    line-height: 1.6;
+  }
+
+  span {
+    color: $ink-muted;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $ink;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      color: $brand-primary;
+    }
+  }
+}
+
+.contact-details__address {
+  margin: 0;
+  color: $ink;
+  font-style: normal;
+  line-height: 1.8;
+}
+
+@media (min-width: $bp-md) {
+  .contact-details__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -19,8 +19,8 @@ services:
         link:
           url: tel:+27125424388 
           text: "Call: 012 542 4388"
-      - title: "I’m Still Looking for a Home"
-        desc: "I’m searching property portals and visiting show houses."
+      - title: "I'm Still Looking for a Home"
+        desc: "I'm searching property portals and visiting show houses."
         icon: fas fa-search
 
 calculators:
@@ -114,7 +114,7 @@ team:
         image: "assets/img/team/Lizzy Mootane evo Ultimate.png"
         role: "Head of Homeloans & Executive Director"
         social:
-          - url: tel:068 224 4434
+          - url: tel:068 225 4434
             icon: fas fa-phone
           - url: mailto:lizzy.mootane@evogroup.co.za?subject=Website Enquiry
             icon: fas fa-envelope
@@ -156,7 +156,7 @@ team:
 
 contact:
     title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    text: "Speak to our Pretoria home loan team by phone or email, or visit our office in Montana."
     section: team
     
 footer:
