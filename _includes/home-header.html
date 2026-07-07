@@ -1,16 +1,16 @@
-<!-- Header -->
-<header class="masthead" id="page-top">
-  <div class="container">
-    <div class="intro-text">
-      {%- if site.data.sitetext.header.title -%}
-      <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
-      {%- endif -%}
-      {%- if site.data.sitetext.header.text -%}
-      <h1 class="intro-heading">{{ site.data.sitetext.header.text }}</h1>
-      {%- endif -%}
-      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-        href="/contact">Talk To Us</a>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        {%- if site.data.sitetext.header.title -%}
+        <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
+        {%- endif -%}
+        {%- if site.data.sitetext.header.text -%}
+        <h1 class="intro-heading">{{ site.data.sitetext.header.text }}</h1>
+        {%- endif -%}
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+          href="/contact">Talk To Us</a>
+      </div>
     </div>
-  </div>
-</header>
-<!-- End Header -->
+  </header>
+  <!-- End Header -->

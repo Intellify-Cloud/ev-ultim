@@ -6,16 +6,16 @@ background: white
 author: "Eben Roux / Pieter Oosthuizen"
 image: "/social_evulti.jpg"
 ---
-<div class="col-lg-12 text-center">
+<div class="text-center mb-4">
 	<h1 class="section-heading text-uppercase">Bond Calculator</h1>
 </div>
 
 <br>
 
-<div>
+<section aria-label="Bond Calculator">
     <iframe class="bond-calc" frameborder="0"
         src="https://www.ooba.co.za/calculators/bond-repayment-calculator/?iframe=true&iftype=nobrand"
         title="Bond Calculator"></iframe>
-</div>
+</section>
 
 {% include team.html %}

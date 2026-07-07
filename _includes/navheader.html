@@ -8,24 +8,36 @@
         {{ site.title }}
         {%- endif -%}
       </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
+        <span class="navbar-toggler__label">Menu</span>
+        <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           {%- for link in site.data.navigation.nav -%}
-          <li class="nav-item">
+          {%- if link.children -%}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown-{{ forloop.index }}" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link.title }}</a>
+            <div class="dropdown-menu" aria-labelledby="nav-dropdown-{{ forloop.index }}">
+              {%- for child in link.children -%}
+              <a class="dropdown-item" href="{{ child.url }}">{{ child.title }}</a>
+              {%- endfor -%}
+            </div>
+          </li>
+          {%- else -%}
+          <li class="nav-item{% if link.title == 'Contact' %} nav-item--cta{% endif %}">
             {%- if link.url -%}
             <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
-            {%- else if link.section -%}
+            {%- elsif link.section -%}
             <a class="nav-link js-scroll-trigger" href="#{{ link.section }}">{{ link.title }}</a>
             {%- else -%}
             <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
             {%- endif -%}
           </li>
+          {%- endif -%}
           {% endfor %}
         </ul>
       </div>

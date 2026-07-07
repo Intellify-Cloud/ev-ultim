@@ -24,7 +24,7 @@ async function generateFavicons() {
   for (const { name, size } of sizes) {
     try {
       await sharp(sourcePath)
-        .resize(size, size, { fit: 'contain', background: { r: 0, g: 143, b: 168, a: 1 } })
+        .resize(size, size, { fit: 'contain' })
         .toFile(path.join(outputDir, name));
       console.log(`  Created ${name} (${size}x${size})`);
     } catch (err) {
@@ -32,12 +32,14 @@ async function generateFavicons() {
     }
   }
 
-  // Generate ICO file (16x16 and 32x32 combined)
+  // Generate ICO file (32x32 for broader browser support)
+  // sharp doesn't output true ICO format, but browsers accept PNG with .ico extension
   try {
-    const buffer16 = await sharp(sourcePath).resize(16, 16).toFormat('ico').toBuffer();
-    const buffer32 = await sharp(sourcePath).resize(32, 32).toFormat('ico').toBuffer();
-    // Simple approach: just create a basic ICO with 16x16
-    await sharp(sourcePath).resize(16, 16).toFormat('ico').toFile(path.join(outputDir, 'favicon.ico'));
+    const tempPng = path.join(outputDir, 'favicon-32-temp.png');
+    await sharp(sourcePath)
+      .resize(32, 32)
+      .toFile(tempPng);
+    fs.renameSync(tempPng, path.join(outputDir, 'favicon.ico'));
     console.log('  Created favicon.ico');
   } catch (err) {
     console.error('  Failed to create favicon.ico:', err.message);

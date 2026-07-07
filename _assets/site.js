@@ -15,7 +15,9 @@ $(function () {
     });
 
     $(".js-scroll-trigger").on("click", function () {
-        $(".navbar-collapse").collapse("hide")
+        if (window.matchMedia("(max-width: 991px)").matches) {
+            $(".navbar-collapse.show").collapse("hide");
+        }
     });
 
     $("body").scrollspy({

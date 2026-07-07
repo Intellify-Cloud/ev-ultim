@@ -1,8 +1,13 @@
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: $font-family-heading;
   font-weight: $btn-font-weight;
   border-radius: $btn-border-radius;
   letter-spacing: .01em;
+  line-height: 1.2;
+  text-align: center;
   transition: $btn-transition;
   // Accessible touch target (min 44px) on every device
   min-height: $touch-target-min;
@@ -14,6 +19,14 @@
   &:active,
   &:focus {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: ($bp-lg - 1px)) {
+  .btn {
+    min-height: $touch-target-min * 1.05;
+    padding: $btn-padding-y * 1.05 $btn-padding-x * 1.05;
+    font-size: $btn-font-size * 1.05;
   }
 }
 

@@ -50,7 +50,7 @@ header.masthead {
     }
   }
 }
-@media(min-width:768px) {
+@media(min-width: $bp-md) {
   header.masthead {
     // Use spacing scale for consistent padding
     padding-top: $space-10; // 96px
